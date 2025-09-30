@@ -1,0 +1,252 @@
+
+/* IMPORT THE FONT  look into CloudFlare Hono(javascript--code)  */  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* VARIABLES */
+:root {
+    --color-dark: #1F2937; /* hero + footer backgrnd*/
+    --color-blue: #3882f6; /* buttons + cta banner*/
+    --color-light: #f4f7fa; /* page background*/
+    --color-grey: #E5E7EB; /*quote backgrnd*/
+    --max-width: 1200px;
+    --gap: 1.5rem;
+    --radius: 6px;
+
+    /*font-weights */
+    --fw-light:     300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+}
+
+/* GLOBAL */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background: var(--color-light);
+    line-height: 0 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+/*-------- HEADER ---------------------*/
+header {
+    background: var(--color-dark);
+    color: #F9FAF8;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: var(--fw-black);
+    color: #f9faf8;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+/*-------------------  HERO ------*/ 
+
+.hero {
+    background-color: var(--color-dark);
+    color: #F9FAF8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+
+.hero-content{
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: var(--fw-black);
+    color: #f9faf8;
+    margin-bottom: .5rem;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary{
+    background: var(--color-blue);
+    color: #fff;
+    padding: .75rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: var(--fw-medium);
+}
+
+.hero-visual{
+    background: #6B7280;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .5;
+    font-size: .9rem;
+    color: #fff;
+}
+
+/*--------------------------FEATURES--------------------*/ 
+
+.features{
+    background: #fff;
+    padding: 3rem 0;
+}
+
+.features h2 {
+    font-size: 36px;
+    font-weight: var(--fw-black);
+    color: var(--color-dark);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: var(--gap);
+    max-width: 900px;
+    margin: 0  auto;
+}
+
+.feature-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-box{
+    width: 100%;
+    padding-top: 100%; /* square */
+    border: 2px solid var(--color-blue);
+    border-radius: var(--radius);
+    position: relative;
+}
+
+.feature-item p{
+    margin-top: .75rem;
+    font-size: .85rem;
+    text-align: center;
+    opacity: .7;
+
+}
+
+/*------------------- TESTIMONIAL ------*/ 
+
+.testimonial {
+    background: var(--color-grey);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.testimonial blockquote{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: var(--fw-light);
+    color: var(--color-dark);
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+
+}
+
+.testimonial cite {
+
+    display: block;
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    color: var(--color-dark);
+    opacity: .8;
+
+}
+/*----------------------------BANNER--------------------------*/
+.cta-banner {
+    background: var(--color-blue);
+    color: #fff;
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+    border-radius: var(--radius);
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+
+}
+
+.cta-text h2{
+    font-size: 18px; /* inherits Roboto */
+    margin-bottom: .5rem;
+}
+
+.cta-text p {
+    font-size: 14px;
+    opacity: .9;
+}
+
+/*--------------------Footer ----------------*/
+footer {
+    background: var(--color-dark);
+    color: #F9FAF8;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    opacity: .7;
+}
+
+/*------------------RESPONSIVE---------*/
+@media (max-width: 768px){
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content,
+    .hero-visual{
+        max-width: 100%;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-banner {
+        padding: 2rem .5rem;
+    }
+}

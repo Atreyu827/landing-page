@@ -81,10 +81,12 @@ nav a {
     align-items: center;
     justify-content: space-between;
     padding: 4rem 0;
+    margin-bottom: 3rem;
 }
 
 .hero-content{
     max-width: 50%;
+    padding-left: 1rem;
 }
 
 .hero-content h1 {
@@ -98,6 +100,13 @@ nav a {
     font-size: 18px;
     color: #E5E7EB;
     margin-bottom: 1.5rem;
+}
+
+.hero-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
 .btn-primary{

@@ -10,7 +10,7 @@
         <!-- HEAD -->
 
         <header> 
-            <div class="container">
+            <div class="container header-bar">
                 <div class="logo">Header Logo</div>
                 <nav>
                     <a href="#">Link 1</a>
@@ -23,16 +23,14 @@
         <!-- HERO -->
 
         <section class="hero">
-            <div class = "container">
-                    <div class="container hero-flex">
-                        <div class="hero-content">
-                            <h1>This website is<br>awesome</h1>
-                            <p>A little subtext under the main title-smaller and lighter.</p>
-                            <button class="btn-primary">Sign Up</button>
-                        </div>
-                        <div class="hero-visual"> this is a placeholder for an image</div>
+                <div class="container hero-flex">
+                    <div class="hero-content">
+                        <h1>This website is<br>awesome</h1>
+                        <p>A little subtext under the main title-smaller and lighter.</p>
+                        <button class="btn-primary">Sign Up</button>
                     </div>
-            </div>
+                    <div class="hero-visual"> this is a placeholder for an image</div>
+                </div>
         </section>
 
         <!-- FEATURES -->
@@ -68,21 +66,25 @@
         <!-- TESTIMONIAL -->
 
         <section class="testimonial">
-            <blockquote>
-                "You are not special. You are not a beautiful or unique snowflake. You are the same decaying organic matter as everything else.  We are the all-singing, all-dancing crap of the world. We are all part of the same compost heap." 
-            </blockquote>
-            <cite>-Tyler Durden, Fight Club</cite>
+            <div class = "container">
+                <blockquote>
+                    "You are not special. You are not a beautiful or unique snowflake. You are the same decaying organic matter as everything else.  We are the all-singing, all-dancing crap of the world. We are all part of the same compost heap." 
+                </blockquote>
+                <cite>-Tyler Durden, Fight Club</cite>
+            </div>
         </section>
 
         <!-- CTS BANNER -->
 
-        <section class="cta-banner">
-            <div class="cta-container">
-                <div class="cta-text">
-                    <h2>Call to action! Let's Fight! </h2>
-                    <p>Sign up for a fight by clicking that button right over there!</p>
+        <section class="cta-wrapper">
+            <div class="container">
+                <div class="cta-card">
+                    <div class="cta-text">
+                        <h3>Call to action! Let's Fight! </h3>
+                        <p>Sign up for a fight by clicking that button right over there!</p>
+                    </div>
+                    <button class="btn-outline">Fight!</button>
                 </div>
-                <button class="btn-primary">Fight!</button>
             </div>
         </section>
 

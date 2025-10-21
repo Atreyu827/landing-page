@@ -33,8 +33,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #333;
     background: var(--color-light);
-    line-height: 0 1rem;
-}
+    line-height: 1.5;
 
 a{
     text-decoration: none;
@@ -46,30 +45,35 @@ button{
     border: none;
     font-family: inherit;
 }
+.container{
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
 
 /*-------- HEADER ---------------------*/
 header {
     background: var(--color-dark);
     color: #F9FAF8;
 }
-
-header .container {
-    display: flex;
+.header-bar{
+    display:flex; 
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 18px 0;
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: var(--fw-black);
-    color: #f9faf8;
+.logo{
+    font-size: 14px;
+    font-weight:var(--fw-bold);
+    color: #F9FAF8;
 }
 
-nav a {
-    margin-left: 1.5rem;
-    font-size: 18px;
-    color: #e5e7eb;
+
+nav a{
+    margin-left: 24px;
+    font-size: 12px;
+    color: #E5E7EB;
 }
 
 /*-------------------  HERO ------*/ 
@@ -77,79 +81,75 @@ nav a {
 .hero {
     background-color: var(--color-dark);
     color: #F9FAF8;
+}
+.hero-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 0;
-    margin-bottom: 3rem;
+    gap: 40px;
+    padding: 56px 0;
 }
 
 .hero-content{
-    max-width: 50%;
-    padding-left: 1rem;
+    max-width: 520px;
 }
 
 .hero-content h1 {
     font-size: 48px;
+    line-height: 1.1;
     font-weight: var(--fw-black);
-    color: #f9faf8;
-    margin-bottom: .5rem;
+    margin-bottom: 8px;
 }
 
 .hero-content p {
     font-size: 18px;
     color: #E5E7EB;
-    margin-bottom: 1.5rem;
-}
-
-.hero-flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+    margin-bottom: 18px;
 }
 
 .btn-primary{
     background: var(--color-blue);
     color: #fff;
-    padding: .75rem 1.5rem;
+    padding: .6rem 1.1rem;
     border-radius: var(--radius);
     font-weight: var(--fw-medium);
 }
 
 .hero-visual{
     background: #6B7280;
-    width: 400px;
-    height: 250px;
+    width: 460px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: .5;
+    opacity: .6;
     font-size: .9rem;
     color: #fff;
+    border-radius: 4px;
 }
 
 /*--------------------------FEATURES--------------------*/ 
 
 .features{
     background: #fff;
-    padding: 3rem 0;
+    padding: 48px 0;
 }
 
 .features h2 {
     font-size: 36px;
-    font-weight: var(--fw-black);
-    color: var(--color-dark);
+    font-weight: 900px;
+    color: #1F2937;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 24px;
 }
 
 .feature-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-    gap: var(--gap);
-    max-width: 900px;
-    margin: 0  auto;
+    grid-template-columns: repeat(4, 160px);
+    gap: 28px;
+    justify-content: center;
+    max-width: 920px;
+    margin: 0 auto;
 }
 
 .feature-item{
@@ -159,103 +159,105 @@ nav a {
 }
 
 .feature-box{
-    width: 100%;
-    padding-top: 100%; /* square */
-    border: 2px solid var(--color-blue);
-    border-radius: var(--radius);
-    position: relative;
+    width: 160px;
+    height: 160px;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
 }
 
 .feature-item p{
-    margin-top: .75rem;
-    font-size: .85rem;
+    margin-top: 8px;
+    font-size: 12px;
     text-align: center;
-    opacity: .7;
+    color:#6B7280;
+    max-width: 160px;
 
 }
 
 /*------------------- TESTIMONIAL ------*/ 
 
 .testimonial {
-    background: var(--color-grey);
-    padding: 4rem 1rem;
-    text-align: center;
+    background: #E5E7EB;
+    padding: 60px 0;
 }
 
 .testimonial blockquote{
     font-size: 36px;
     font-style: italic;
-    font-weight: var(--fw-light);
-    color: var(--color-dark);
+    font-weight: 300;
+    color: #1F2937;
     max-width: 700px;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto;
+    text-align: left;
 
 }
 
-.testimonial cite {
+.testimonial cite{
 
     display: block;
+    max-width: 700px;
+    margin: 10px auto 0;
+    text-align: right;
     font-style: normal;
-    font-weight: var(--fw-bold);
-    color: var(--color-dark);
-    opacity: .8;
+    font-weight: 700;
+    color: #1F2937;
 
 }
 /*----------------------------BANNER--------------------------*/
-.cta-banner {
-    background: var(--color-blue);
-    color: #fff;
-    margin: 2rem 0;
-    padding: 2rem 1rem;
-    border-radius: var(--radius);
-}
 
-.cta-container {
-    display: flex;
+.cta-wrapper{
+    padding: 48px 0 64px;
+}
+.cta-card{
+    background: #3882F6;
+    columns: #fff;
+    border-radius: 8px;
+    display:flex;
     align-items: center;
     justify-content: space-between;
-    max-width: var(--max-width);
-    margin: 0 auto;
-
+    padding: 24px 32px;
 }
 
-.cta-text h2{
-    font-size: 18px; /* inherits Roboto */
-    margin-bottom: .5rem;
+
+.cta-text h3{
+    font-size: 16px; /* inherits Roboto */
+    margin-bottom: 4px;
 }
 
 .cta-text p {
-    font-size: 14px;
-    opacity: .9;
+    font-size: 12px;
+    opacity: .95;
 }
-
+.btn-outline{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: .5rem 1.1rem;
+}
 /*--------------------Footer ----------------*/
 footer {
     background: var(--color-dark);
     color: #F9FAF8;
     text-align: center;
-    padding: 1rem 0;
-    font-size: .8rem;
-    opacity: .7;
+    padding: 14px 0;
+    font-size: 12px;
+    opacity: .85;
 }
 
 /*------------------RESPONSIVE---------*/
-@media (max-width: 768px){
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-content,
-    .hero-visual{
-        max-width: 100%;
-    }
+@media (max-width: 900px){
+    .feature-list{grid-template-columns: repeat(2, 1fr);
+                  justify-items: center;}
 
-    .cta-container {
-        flex-direction: column;
-        text-align: center;
-    }
+    .hero-flex{flex-direction: column;
+               text-align: center;}
 
-    .cta-banner {
-        padding: 2rem .5rem;
-    }
+    .hero-visual{width: 100%;
+                 max-width: 520px;}
+    
+    .cta-card{flex-direction: column;
+              gap: 16px;
+              text-align: center;}
 }
